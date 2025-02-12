@@ -1,0 +1,60 @@
+.deepseek-print-button {
+  background-color: #1677ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.deepseek-print-button:hover {
+  background-color: #4096ff;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 确保数学公式正确显示 */
+  .katex, .katex-display {
+    display: block !important;
+    page-break-inside: avoid;
+  }
+
+  /* 确保中文字体正确显示 */
+  * {
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  }
+
+  /* 避免内容被截断 */
+  .dad65929 {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  /* 隐藏不需要的元素 */
+  .deepseek-print-button,
+  button,
+  .header,
+  .footer {
+    display: none !important;
+  }
+
+  /* 设置合适的页边距 */
+  @page {
+    margin: 1cm;
+    size: auto;
+  }
+
+  /* 确保代码块不会被分页 */
+  pre, code {
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+  }
+} 
