@@ -35,6 +35,25 @@ function handlePrint() {
     }
   }
 
+  // 处理数学公式的样式
+  const mathElements = printContent.querySelectorAll('.katex, .katex-html, .katex-display');
+  mathElements.forEach(el => {
+    // 保持数学公式的原始样式
+    const originalStyle = window.getComputedStyle(el);
+    el.style.cssText = originalStyle.cssText;
+    
+    // 防止不必要的换行
+    el.style.whiteSpace = 'nowrap';
+    el.style.display = 'inline-block';
+    
+    // 如果是display模式的公式，则保持块级显示
+    if (el.classList.contains('katex-display')) {
+      el.style.display = 'block';
+      el.style.textAlign = 'center';
+      el.style.margin = '1em 0';
+    }
+  });
+
   // 设置打印样式
   document.body.innerHTML = '';
   document.body.appendChild(printContent);
@@ -54,6 +73,15 @@ function handlePrint() {
       }
       .deepseek-print-button {
         display: none !important;
+      }
+      .katex, .katex-html {
+        white-space: nowrap !important;
+        display: inline-block !important;
+      }
+      .katex-display {
+        display: block !important;
+        text-align: center !important;
+        margin: 1em 0 !important;
       }
       @page {
         margin: 1cm;

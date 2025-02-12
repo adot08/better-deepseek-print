@@ -1,0 +1,18 @@
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Data directory
+Data/
+.cache/
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+*.zip 
