@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DeepSeek Print Pro",
+  "name": "Better DeepSeek Print",
   "version": "1.0.0",
   "description": "优化 DeepSeek Chat 页面的打印功能，完美支持数学公式打印",
   "icons": {

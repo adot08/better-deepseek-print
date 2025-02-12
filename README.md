@@ -1,4 +1,4 @@
-# DeepSeek Print Extension
+# Better DeepSeek Print
 
 一个Chrome扩展，用于优化DeepSeek Chat页面的打印功能。
 
