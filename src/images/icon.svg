@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 打印机主体 -->
+  <rect x="24" y="40" width="80" height="48" rx="8" fill="#1677FF"/>
+  
+  <!-- 纸张 -->
+  <rect x="36" y="16" width="56" height="24" fill="#FFFFFF" stroke="#1677FF" stroke-width="4"/>
+  <rect x="36" y="72" width="56" height="40" fill="#FFFFFF" stroke="#1677FF" stroke-width="4"/>
+  
+  <!-- 按钮 -->
+  <circle cx="92" cy="56" r="6" fill="#FFFFFF"/>
+  
+  <!-- 打印线条 -->
+  <line x1="44" y1="84" x2="84" y2="84" stroke="#1677FF" stroke-width="4"/>
+  <line x1="44" y1="96" x2="84" y2="96" stroke="#1677FF" stroke-width="4"/>
+</svg> 
